@@ -88,7 +88,7 @@ with st.sidebar:
     elif not st.session_state.api_key:
         status_message.warning("Please enter your Gemini API Key")
 
-st.title("CSV Assistant")
+st.title("CSV Agent")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
